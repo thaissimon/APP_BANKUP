@@ -2,6 +2,9 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import Login from "../pages/login";
 import Start from "../pages/start";
+import Cadastro from "../pages/cadastro/cadastro";
+import CadastroAdicional from "../pages/cadastro-adicional/cadastro-adicional";
+import TokenScreen from "../pages/token/token";
 import { RootStackParamList } from "./types";
 import Config from "../pages/configuracoes";
 import DrawerRoutes from "./drawer.routes";
@@ -22,6 +25,9 @@ export default function Routes() {
     >
       <Stack.Screen name="Start" component={Start} />
       <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Cadastro" component={Cadastro} />
+      <Stack.Screen name="Token" component={TokenScreen} />
+      <Stack.Screen name="CadastroAdicional" component={CadastroAdicional} />
       <Stack.Screen name="Config" 
         component={Config} 
         options={{
